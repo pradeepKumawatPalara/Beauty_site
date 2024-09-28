@@ -1,0 +1,379 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar {
+    display: flex;
+  justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ca730f;
+    color: rgb(0, 0, 0);
+    border-bottom:2px solid #020202;
+
+    position: sticky;
+    top: 0; /* Ensure the navbar stays at the top */
+    z-index: 1000; /* Ensure it stays above other content */
+    width: 100%;
+  }
+  
+  .navbar-left {
+    display: flex;
+    align-items: center;
+    padding-left: 100px;
+    justify-content: space-around;
+   
+  }
+  
+  .logo {
+    width: 70px;
+    height: 70px;
+    margin-right: 10px;
+  }
+  
+  .site-name {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .navbar-right {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-right: 100px;
+ 
+  }
+  
+  .navbar-right a {
+    color: white;
+    text-decoration: none;
+    padding: 0 15px;
+    font-size: 16px;
+  }
+  
+  .navbar-right a:hover {
+    text-decoration:underline
+    ;
+  }
+  
+  .email-icon img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .email-icon {
+    padding: 0 15px;
+  }
+
+
+  .container {
+    display: flex;
+    justify-content: space-between; /* Aligns left and right divs horizontally */
+     /* Vertically aligns content */
+     margin-top: 50px;
+    padding: 20px;
+  
+  }
+  
+  .left-div {
+ 
+    margin-left: 50px;
+   
+
+    /* Ensures text inside is horizontally aligned */
+    gap: 20px; /* Adds space between the text elements */
+  }
+  
+ .MainText {
+  
+    font-size: 100px;
+    font-weight:bold;
+  }
+  
+  .right-div img {
+   max-width: 700px;
+  
+    
+    margin-right: 70px;
+    height: 500px;
+    width: 100vw;
+    border-radius: 5px;
+  }
+
+  .description{
+    margin-top: 50px;
+    margin-right: 150px;
+    gap: 30px;
+    line-height: 2;
+  }
+  .getStarted{
+    height: 50px;
+    width: 180px;
+    margin-top: 50px;
+    background-color: #ca730f;
+    color: white;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+  }
+
+  .features-section {
+    display: flex;
+    justify-content: flex-end; /* Aligns the text to the right */
+    padding: 20px;
+    margin-top: 0;
+    margin-right: 50px;
+   
+  }
+  
+  .features-section h2 {
+    font-size: 65px; /* Big size for the text */
+    font-weight: bold; /* Bold text */
+  }
+
+  .products-section {
+    display: flex;
+    justify-content: space-around; /* Space between the product divs */
+    padding: 20px;
+    margin-top: 0;
+
+  }
+  
+  .product {
+    position: relative; /* For positioning the overlay */
+    width: 30%; /* Each product takes up 30% of the width */
+   
+  }
+  
+  .product img {
+    width: 100%; /* Make images responsive */
+    height: 500px; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: add rounded corners */
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: 50px; /* Position text at the bottom */
+    left: 10px; /* Add some padding from the left */
+    color: white; /* Text color */
+     /* Semi-transparent background */
+    padding: 5px 10px; /* Padding around the text */
+ 
+    border-radius: 20px; /* Optional: rounded corners for the overlay */
+  }
+  .overlay .service{
+  font-weight: bold;
+    font-size: 20px;
+  }
+  .overlay .serviceType{
+    font-weight: bold;
+    font-size: 30px;
+  }
+  /* .product:hover  .service{
+    display: none;
+  }
+
+  .product:hover  .serviceType{
+    display: none;
+  } */
+   .work-section{
+    margin-left: 60px;
+    margin-top: 100px;
+    font-size: 50px; /* Big size for the text */
+    font-weight: bold; /* Bold text */
+    color: #ca730f;
+   }
+
+   .what-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px; /* Space between sections */
+}
+
+.what-container .section {
+    width: 45%; /* Adjust width as necessary */
+}
+.what-container .section1 {
+   margin-left: 40px;
+}
+
+
+.what-container hr{
+    margin-bottom: 50px;
+    margin-top: 30px;
+    height:  3px;
+    background-color: #020202;
+}
+
+.what-container h1 {
+    font-size: 3rem; /* Large heading */
+    margin-bottom: 10px; /* Space below heading */
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+.what-container p {
+    transition: color 0.3s, transform 0.3s; 
+    margin-bottom: 15px;
+    font-size: 25px;
+    /* Smooth transition for color and movement */
+}
+
+/* Hover effect for paragraphs */
+.what-container p:hover {
+    color:  #ca730f; /* Change color on hover */
+    transform: translateX(20px); /* Move 100px to the right on hover */
+    cursor: pointer;
+}
+
+/* About US */
+
+.aboutUs-container {
+    position: relative;
+    height: 90vh; /* Cover 70% of the viewport height */
+    overflow: hidden; /* Hide overflow for image */
+   
+}
+
+.aboutUs-container .background-image {
+    margin-top: 100px;
+    width: 1000px; /* Make image responsive */
+    height: 100%; /* Fill the container */
+    object-fit: cover; /* Cover the area without distortion */
+    border-radius: 15px;
+}
+
+.aboutUs-container .overlay {
+    position: absolute;
+    top: 50%; /* Center the overlay vertically */
+    right: 0; /* Align to the right */
+    margin-left: 700px;
+    transform: translateY(-50%); /* Adjust to center */
+
+    padding: 20px; /* Padding around text */
+    width: 50%; /* Half the width of the container */
+    color: #020202;
+}
+
+.aboutUs-container h1 {
+    
+    margin: 0; /* Remove default margin */
+    margin-left: 200px;
+    margin-bottom: 70px;
+    font-size: 2.5rem; /* Large heading */
+}
+
+.aboutUs-container p {
+   font-size: 20px;
+   line-height: 1.5;
+
+}
+
+/* Award */
+
+.award-container{
+    display: flex;
+
+    margin-top: 100px;
+}
+
+.award-container .left {
+    width: 30%;
+    padding-left: 100px; /* Add some padding */
+    font-size: 30px;
+}
+
+.award-container .right {
+    width: 70%;
+
+}
+.award-container .right-section{
+    display: flex;
+   justify-content: space-around;
+    padding: 20px; /* Add some padding */
+    padding-left: 40px;
+}
+
+.award-container h1 {
+    font-size: 2em; /* Large font size */
+    font-weight: bold; /* Bold text */
+    margin: 10px 0; /* Space between headings */
+}
+
+.award-container .item {
+    margin: 10px 0; /* Space between items */
+    padding: 10px;
+    border: 1px solid transparent; /* Initial border */
+    
+}
+
+
+
+.award-container .image img {
+    max-width: 100%; /* Responsive image */
+    height: 80px; /* Maintain aspect ratio */
+}
+.award-container .right hr{
+    height: 3px;
+    background-color: #020202;
+    border-radius: 50%;
+}
+.award-container .right-section .itemmore:hover{
+ color: #ca730f;
+ cursor: pointer;
+ }
+
+ .award-container .right-section .itemmore:hover{
+    color: #ca730f;
+    cursor: pointer;
+    }
+    .award-container .right-section .itemservice h2:hover{
+        color: #ca730f;
+        cursor: pointer;
+        }
+
+
+ .award-container .right-section .itemyear{
+    padding-top: 40px;
+ }
+ .award-container .right-section .itemservice {
+    padding-top: 20px;
+ }
+
+ .award-container .right-section .itemmore{
+    padding-top: 30px;
+ }
+ .award-container .right-section .itemservice h2{
+    padding-bottom: 10px;
+ }
+
+ /* Video */
+
+ .video-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.video-container .video {
+    width: 900px;
+   
+    background: #ad2121; /* Optional: background color for video container */
+    height: 600px;
+  
+}
+
+.video-container h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    margin-top: 100px;
+    color: #333; /* Optional: text color */
+}
+
+
+
